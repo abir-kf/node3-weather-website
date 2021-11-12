@@ -41,7 +41,7 @@ weatherForm.addEventListener('submit', (e)=>{//when kndiro submit we grab event 
    messageOne.textContent = 'Loading...'
    messageTwo.textContent = ''
    
-   fetch('http://localhost:3000/weather?address='+location).then((response) =>{//when we fetch data ( recuperer data) then ndirp l response traitement li jay f les lignes apres
+   fetch('/weather?address='+location).then((response) =>{//when we fetch data ( recuperer data) then ndirp l response traitement li jay f les lignes apres
 
 
     response.json().then((data) =>{//when we recieve json data we parse it to an java script object = data o nprintiwha
